@@ -9,9 +9,16 @@ namespace FavFighters.ViewModels
     {
         ObservableCollection<Fighter> _fighters;
 
+        public Command<Fighter> FavoriteCommand { get; set; }
+
         public FavFightersViewModel()
         {
             LoadFighters();
+
+            FavoriteCommand = new Command<Fighter>((f) =>
+            {
+                MessagingCenter.Send(f, "Favorited");
+            });
         }
 
         public ObservableCollection<Fighter> Fighters

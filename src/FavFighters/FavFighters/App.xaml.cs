@@ -9,6 +9,11 @@ namespace FavFighters
         {
             InitializeComponent();
 
+            // Enable your flags here!
+            Device.SetFlags(new[] {
+                "SwipeView_Experimental"
+            });
+
             MainPage = new FavFightersView();
         }
 
