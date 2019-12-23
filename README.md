@@ -1,3 +1,5 @@
+Adapted sample code for blog post here: https://blog.verslu.is/xamarin/xamarin-forms-xamarin/swipeview-interaction-with-xamarin-forms/
+
 # FavFighters
 
 **Xamarin.Forms** good looking UI sample using the new **SwipeView**. Developed without using Custom Renderers or plugins!.
