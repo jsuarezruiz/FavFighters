@@ -20,7 +20,9 @@ namespace FavFighters.Views
         // Uncomment this for the event way
         //void SwipeItemView_Invoked(System.Object sender, System.EventArgs e)
         //{
-        //    DisplayAlert("Added favorite", "This fighter is added to your favorites!", "Thanks");
+        //    var selectedFighter = ((SwipeItemView)sender).BindingContext as Fighter;
+
+        //    DisplayAlert("Added favorite", $"{selectedFighter.Name} is added to your favorites!", "Thanks");
         //}
     }
 }
