@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
+﻿using Foundation;
 using UIKit;
+using Xamarin.Forms;
 
 namespace FavFighters.iOS
 {
@@ -22,6 +19,7 @@ namespace FavFighters.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            Forms.SetFlags("SwipeView_Experimental");
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

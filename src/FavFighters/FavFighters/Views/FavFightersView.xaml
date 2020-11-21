@@ -68,11 +68,13 @@
                 <Setter Property="FontSize" Value="12" />
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="VerticalOptions" Value="Center" />
-                <Setter Property="Margin" Value="0, 36, 0, 0" />
+                <Setter Property="Margin" Value="0, 48, 0, 0" />
             </Style>
 
             <DataTemplate x:Key="MessageTemplate">
                 <SwipeView
+                    Threshold="100"
+                    BackgroundColor="Transparent"
                     HeightRequest="110">
                     <SwipeView.RightItems>
                         <SwipeItems
@@ -94,7 +96,8 @@
                         </SwipeItems>
                     </SwipeView.RightItems>
                     <SwipeView.Content>
-                        <Grid>
+                        <Grid
+                            BackgroundColor="Transparent">
                             <Frame
                                 Style="{StaticResource FrameStyle}">
                                 <Grid
